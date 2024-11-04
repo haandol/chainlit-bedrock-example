@@ -25,8 +25,9 @@ cp env/dev.env .env
 
 1. edit `.env` and set the following variables, if necessary.
 
+you can find all available model_id at [here](https://docs.anthropic.com/en/api/claude-on-amazon-bedrock)
 ```bash
-MODEL_ID=""
+MODEL_ID="anthropic.claude-3-haiku-20240307-v1:0"
 ```
 
 ## Usage
