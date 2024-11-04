@@ -1,0 +1,38 @@
+{
+  "name": "Demo",
+  "build": {
+    "context": "..",
+    "dockerfile": "../Dockerfile"
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/mikaello/devcontainer-features/modern-shell-utils:1": {}
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "extensions.verifySignature": false
+      },
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "ms-python.python",
+        "ms-python.black-formatter",
+        "ms-python.flake8",
+        "ms-pyright.pyright",
+        "PKief.material-icon-theme",
+        "aaron-bond.better-comments",
+        "charliermarsh.ruff",
+        "eamodio.gitlens",
+        "mikestead.dotenv",
+        "-ms-python.vscode-pylance"
+      ]
+    }
+  },
+  "forwardPorts": [8000],
+  "postCreateCommand": "pip install -r requirements.txt",
+  "mounts": [
+    "source=${env:HOME}${env:USERPROFILE}/.aws,target=/root/.aws,type=bind",
+    "source=${env:HOME}${env:USERPROFILE}/.ssh,target=/root/.ssh,type=bind"
+  ]
+}
+

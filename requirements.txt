@@ -1,0 +1,12 @@
+requests
+rich
+chainlit
+langchain
+langchain-aws
+langgraph
+python-dotenv
+tavily-python
+arize-phoenix-otel
+openinference-instrumentation-langchain
+boto3
+azure-storage-file-datalake
