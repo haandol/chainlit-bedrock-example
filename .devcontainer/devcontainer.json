@@ -6,6 +6,7 @@
   },
   "features": {
     "ghcr.io/devcontainers/features/aws-cli:1": {},
+    "ghcr.io/devcontainers/features/sshd:1": {},
     "ghcr.io/mikaello/devcontainer-features/modern-shell-utils:1": {}
   },
   "customizations": {
